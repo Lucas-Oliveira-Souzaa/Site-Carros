@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L2 | Locação de Carros</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <!--Fontes do projeto (Lato)-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:wght@100&display=swap"
+        rel="stylesheet">
+
+    <!--Css Bootstrap-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!--Bootstrap icons-->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+    <!--Css do projeto-->
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!--JavaScript Bootstrap-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+        <div class="container py-3">
+            <a href="" class="navbar-brand primary-color">
+                <img src="img/l2  veiculos.jpg" alt="LogoLocacao">
+                <span style="color: #fff;">L2 | Locação de Veiculos</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items"
+                aria-controls="navbar-items" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-sort-down" style="color: #fff;"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-items">
+                <ul class="navbar-nav me-auto mb-2 mc-lg-0">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link primary-color active" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link primary-color" aria-current="page">Nossos Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link primary-color" aria-current="page">Nossa Equipe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link primary-color" aria-current="page">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Sliders-->
+
+    <div class="container" style="background-color: rgb(3, 3, 43);;" id="slider-container">
+        <div class="carousel slide" id="slider" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" class="active" data-bs-target="#slider" data-bs-slide-to="0" aria-current="true"
+                    aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner center-block">
+                <div class="carousel-item active">
+                    <img src="img/slide1.jpg" alt="Carro 1" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h5></h5>
+                        <a href="contato/index.html" class="btn btn-dark">Faça seu cadastro</a>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img src="img/Automotive (2).jpg" alt="Carro 2" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h5>Veja os beneficios que temos para você!</h5>
+                        <a href="#" class="btn btn-dark">Fale com um atendente</a>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img src="img/Automotive (1).jpg" alt="Carro 3" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h5>Conheça nossos carros disponíveis</h5>
+                        <a href="/cards/index.html" class="btn btn-dark">Ver fotos dos carros</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+                <i class="bi bi-chevron-compact-left"></i>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+                <i class="bi bi-chevron-compact-right"></i>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!--MiniBanner-->
+        <div class="col-12 col-md-10 offset-md-1" id="mini-banners">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="card text-center">
+                        <i class="bi bi-card-text"></i>
+                        <div class="card-body">
+                            <h5 class="card-title primary-color">Contratos</h5>
+                            <p class="card-text secondary-color">Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit.</p>
+                            <a href="#" class="btn btn-dark">Saber Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card text-center">
+                        <i class="bi bi-car-front-fill"></i>
+                        <div class="card-body">
+                            <h5 class="card-title primary-color">Liberação dos Carros</h5>
+                            <p class="card-text secondary-color">Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit.</p>
+                            <a href="#" class="btn btn-dark">Saber Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card text-center">
+                        <i class="bi bi-coin"></i>
+                        <div class="card-body">
+                            <h5 class="card-title primary-color">Pagamentos</h5>
+                            <p class="card-text secondary-color">Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit.</p>
+                            <a href="#" class="btn btn-dark">Saber Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Destaques-->
+    <div class="container" id="featured-container">
+        <div class="col-12">
+            <h2 class="title primary-color ">Nossos Serviços</h2>
+            <p class="subtitle secondary-color text-dark">Conheça mais sobre nossos serviços</p>
+        </div>
+        <div class="col-12" id="featured-images">
+            <div class="row g-4">
+                <div class="col-12 col-md-4">
+                    <img src="img/serviço1.jpg" alt="Serviços 1" class="img-fluid">
+                    <div class="banner-content">
+                        <p class="secondary-color text-dark">Alugamos carros para aplicativo</p>
+                        <h3>Serviços de Locação</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="img/serviço2.jpg" alt="Serviços 1" class="img-fluid">
+                    <div class="banner-content">
+                        <p class="secondary-color text-dark">Compramos o seu carro</p>
+                        <h3>Serviços de Compra</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="img/serviço3.jpg" alt="Serviços 3" class="img-fluid">
+                    <div class="banner-content">
+                        <p class="secondary-color text-dark">Vendemos o seu carro</p>
+                        <h3>Serviços de Venda</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="img/serviço4.webp" alt="Serviços 4" class="img-fluid">
+                    <div class="banner-content">
+                        <p class="secondary-color text-dark">Recuperamos o seu credito</p>
+                        <h3>Recuperação de Credito</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="img/serviço5.png" alt="Serviços 5" class="img-fluid">
+                    <div class="banner-content">
+                        <p class="secondary-color text-dark">Revisamos o processo do seu carro</p>
+                        <h3>Serviços de Revisional</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="img/serviço6.jpg" alt="Serviços 6" class="img-fluid">
+                    <div class="banner-content">
+                        <p class="secondary-color text-dark">Quitamos a sua divida</p>
+                        <h3>Serviços de Quitação</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Info-->
+    <div class="container" id="info-container">
+        <div class="col-12">
+            <h2 class="title primary-color ">Nossa Equipe</h2>
+            <p class="subtitle secondary-color text-dark">
+                Saiba mais sobre a experiência da nossa incrível equipe!
+            </p>
+        </div>
+        <div class="col-12">
+            <div class="row">
+                <div class="col-12 col-md-5" id="info-banner">
+                    <img src="img/info.jpg" alt="informações da Empresa" class="img-fluid" />
+                </div>
+                <div class="col-12 col-md-7 bg-secondary-color" id="info-content">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class=" primary-color text-dark">Esses dados fazem toda a diferença</h2>
+                            <p class="subtitle secondary-color text-dark ">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, vitae id labore
+                                tempora ipsam, sapiente expedita magni voluptate repellendus quod ratione in ullam
+                                saepe, qui repudiandae fuga amet quam odit?
+                            </p>
+                        </div>
+                        <div class="col-12" id="info-numbers">
+                            <div class="row">
+                                <div class="col-4">
+                                    <h3 class="primary-color">5</h3>
+                                    <p class="secondary-color text-dark">Anos no mercado</p>
+                                </div>
+                                <div class="col-4">
+                                    <h3 class="primary-color">500</h3>
+                                    <p class="secondary-color text-dark">Carros Alugados</p>
+                                </div>
+                                <div class="col-4">
+                                    <h3 class="primary-color">2000</h3>
+                                    <p class="secondary-color text-dark">Carros Quitados</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <a href="#" class="btn btn-dark">Saber Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer class="container-fluid bg-dark-color" style="background-color: rgb(3, 3, 43);" id="footer">
+        <div class="container">
+            <div class="row">
+                <!--Footer  Top-->
+                <div class="col-12" id="footer-top">
+                    <div class="row justify-content-between">
+                        <div class="col-4">
+                            <h2>#L2LocVeiculos </h2>
+                        </div>
+                        <div class="col-4" id="social-icons">
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-instagram"></i>
+                            <i class="bi bi-youtube"></i>
+                            <i class="bi bi-twitter"></i>
+                        </div>
+                    </div>
+                </div>
+                <!--Footer Details-->
+                <div class="col-12" id="footer-details">
+                    <div class="row">
+                        <div class="col-12 col-md-4" id="news-container">
+                            <h4>Fique por dentro das novidades</h4>
+                            <p class="secondary-color text-light">Inscreva-se para receber em primeira mão
+                            </p>
+                            <form>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="Digite aqui seu e-mail">
+                                </div>
+                                <button class="btn btn-dark" type="submit">Inscrever</button>
+                            </form>
+                        </div>
+                        <div class="col-12 col-md-4" id="contact-container">
+                            <h4>Formas de contato</h4>
+                            <p class="secondary-color text-light">(61) 98578-9848 / 99333-9187</p>
+                            <p class="secondary-color text-light">contato@l2locaveiculos.com.br</p>
+                        </div>
+                        <div class="col-12 col-md-4" id="links-container">
+                            <div class="row">
+                                <h4>Você pode estar procurando por:</h4>
+                                <div class="col-6">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#" class="secondary-color text-light">Locação de Veiculos</a></li>
+                                        <li><a href="#" class="secondary-color text-light">Compra</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#" class="secondary-color text-light">Venda</a></li>
+                                        <li><a href="#" class="secondary-color text-light">Quitação</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#" class="secondary-color text-light">Recuperação de credito</a></li>
+                                        <li><a href="#" class="secondary-color text-light">Revisional ADM</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#" class="secondary-color text-light">Seja um franqueado</a></li>
+                                        <li><a href="#" class="secondary-color text-light">Nosso contato</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Footer Bootom-->
+                <div class="col-12" id="footer-bottom">
+                    <div class="row justify-content-between">
+                        <div class="col-12 col-md-3">
+                            <p class="secondary-color text-light">L2 | Veiculos &copy; 2023</p>
+                        </div>  
+                        <div class="col-12 col-md-3">
+                            <p class="secondary-color text-light">Estamos esperando por você! <i class="bi bi-heart"></i></p>
+                        </div>                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
